@@ -1,0 +1,22 @@
+
+
+body {
+    max-width: 100%;
+ background: url('../img/bg.jpg');
+    box-sizing: content-box;
+    background-size: 100%;
+    animation: animego 5s forwards;
+    animation-delay: 5s;
+}
+
+main h1 {
+    text-align: center;
+    margin: 2.5rem;
+}
+
+main .rocket-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}

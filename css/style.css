@@ -1,0 +1,1378 @@
+/* #####################################################################################
+## \\\\\\\\\\\\\\\\\\\\\\          \\\\\\\\\\\\\\\\\\\\         \\\\\\\\\\\\\\\\\\\\\\##
+##                                                                                    ##
+##                                                                                    ##
+##                                                                                    ##
+##               School Project                                                       ##
+##          Name:     SPace X   V1.00                                                 ##
+##          Designer: Mohammed Belachhab                                              ##
+##          URL:                                                                      ##
+##                                                                                    ##
+##                                                                                    ##
+##\\\\\\\\\\\\\\\\\\\\\\          \\\\\\\\\\\\\\\\\\\\         \\\\\\\\\\\\\\\\\\\\\\ ##
+######################################################################################## */
+/*select text design*/
+::selection {
+  color: rgba(223, 230, 233,0.8);
+  background: rgba(214, 48, 49,0.4);
+}
+::-moz-selection { /* Code for Firefox */
+  color: rgba(99, 110, 114,0.8);
+  background: rgba(214, 48, 49,0.4);
+}
+/*finish select design design*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*######### gotop design ###########*/
+#gotop{position: fixed;
+    float: right;
+    width: 50px;
+    height: 50px;
+    background: rgba(99, 110, 114,0.7);
+    bottom: 48px;
+    left: 94%;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+}
+.fa-angle-up{
+font-size: 60px;
+color: rgba(236, 240, 241,0.7);
+}
+#gotop:hover{
+    background: white;
+}
+.fa-angle-up:hover{
+    color:rgba(99, 110, 114,0.7);
+}
+/*######### gotop design ###########*/
+
+
+.container-fluid{
+    padding: 0!important;
+background-color: #16263d;
+    background-repeat: repeat;
+    background-size: inherit;
+    background-attachment: scroll;
+    background-position: center top;
+    background-image: url('../img/bg.gif');
+    overflow: hidden;
+}
+#header1{
+    background: rgba(99, 110, 114,0.4)!important;
+	border-bottom-left-radius: 40%;
+		border-bottom-right-radius: 40%;
+        position:fixed;
+        width: 100%;
+        padding-bottom: 46px;
+        z-index: 21;    }
+    #header1 nav{
+        position: relative;
+        top: 10px;
+        width: 80%;
+    }
+    #header1 ul{
+        width: 70%;
+        justify-content: center;
+    }
+    #header1 li{
+        display: inline-block;
+        margin-left: 8px;
+       
+    text-align: center;
+    }
+    #header1 a{
+        color: white;
+        text-decoration:none; 
+        font-family: 'Indie Flower', cursive;
+        display: block;
+        padding: 14px;
+        font-size: 113%;
+    }
+    #header1 form{
+        width: 30%;
+    }
+    #header1 nav li:first-child{
+        background: whitesmoke;
+        border-radius: 15px;
+    
+    }
+    #header1 nav li:first-child  a{
+    color:#7f8c8d;
+    }
+    #header1 nav li:first-child:hover{
+        background: #16263d;
+    
+    }
+    #header1 nav li:first-child a:hover{
+    color:whitesmoke;
+    }
+    #header1 nav li:hover{
+        background: whitesmoke;
+        transition: 1s;
+        border-radius: 15px;
+        animation: naviber .3s;
+    }
+    #header1 nav  a:hover{
+        color:#7f8c8d ;
+    }
+    .form-control{
+        background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    
+    }
+    #boxsearch:focus{
+        box-shadow: 0 0 20px #0b283f,
+        0 0 30px #113d61,
+        0 0 50px #2d5677,
+        0 0 80px #457297,
+        0 0 100px #a5bbcc;
+      
+    }
+    #searchbtn{
+        border: 1px solid rgba(45, 52, 54,0.3);
+        color: rgb(63, 62, 62);
+        background: white;
+
+    }
+    #searchbtn:hover{
+        background:rgba(45, 52, 54,0.3) ;
+        box-shadow: 0 0 100px #0b283f,
+        0 0 110px #113d61,
+        0 0 120px #2d5677,
+        0 0 140px #457297,
+        0 0 150px #a5bbcc;
+        color: aliceblue;
+    }
+    /* slider is started */
+   #sect1{
+       background-image: url('../img/bgsect1.png');
+       width:100%;
+height:100% ;   }
+   #slider{
+
+    position: absolute;
+    max-height: 100%;
+    overflow: hidden;
+        max-width: 100%;
+
+}
+.carousel-indicators li{
+    background: rgba(99, 110, 114,0.8)!important;
+	border-bottom-left-radius: 40%;
+		border-bottom-right-radius: 40%;
+}
+.carousel-control-prev-icon{
+    background-image: url('../img/left.svg');
+}
+.carousel-control-next-icon{
+    background-image: url('../img/right.svg');
+}
+.fa-chevron-right{
+    font-size:40px ;
+    background: rgba(99, 110, 114,0.8)!important;
+    color:white;
+    padding: 15px;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+.fa-chevron-left{
+    font-size:40px ;
+    background: rgba(99, 110, 114,0.8)!important;
+    color:white;
+    padding: 15px;
+
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+}
+.carousel-item video{
+    min-width:100%;
+    min-height:100%;
+}
+#sliderart{
+    position: absolute;
+    
+    width: 100%;
+    height:100%;
+    z-index: 1;
+    text-align: center;
+    background: url('../img/bgsect1.png');
+    
+
+}
+
+#sliderart-content{
+    position: relative;
+    top: 20%;
+}
+#sliderart2-content{
+    position: relative;
+    top: 20%;
+}
+#sliderart3-content{
+    position: relative;
+    top: 20%;
+}
+#sliderart h1{
+    justify-content: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 13vw;
+    display: flex;
+    color:white;
+    position: relative;
+    top: 10%;
+}
+#sliderart h3{
+    font-family: 'Caveat', cursive;
+    justify-content: center;
+    font-size:4vw;
+    bottom: 4%;
+    display: flex;
+    position: relative;
+    left: 1%;  
+    top: 8%;
+color: wheat;  
+}
+#sliderart2logo{
+    position: absolute;
+    bottom: 32%;
+    left: 65%;
+   
+    width: 33%;
+    animation:sliderlogo 5s infinite alternate linear;
+    
+}
+
+.slidbtn{
+    padding: 2% 4%;
+    position: relative;
+    font-size: 3vw;
+    margin-top: 2%;
+    border: 1px solid white;
+    color: white;background: rgba(99, 110, 114,0.4)!important;
+	border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    font-family: 'Bangers', cursive;;
+}
+.slidbtn:hover{
+    animation: naviber .3s;
+    background: white!important;
+    transition:1s;
+    color:#7f8c8d;
+
+}
+.slidbtn:focus{
+    border:1px solid rgb(245, 35, 35);
+    box-shadow:0 0 100px rgb(245, 35, 35),
+    0 0 130px rgb(245, 35, 35);
+    
+    
+}
+.slidbtn:active{
+    border:rgb(245, 35, 35);
+    box-shadow:0 0 100px rgb(245, 35, 35),
+    0 0 130px rgb(245, 35, 35);
+    
+    
+}
+.carousel-control-next, .carousel-control-prev{
+    top: 43%;
+        z-index: 20;
+        height:15%;
+}
+#sliderart2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position-x:86%;
+        background-position-y:86%;
+    text-align:center;
+    z-index:10;
+    background: url('../img/bgsect1.png');
+
+}
+#sliderart2 h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 12vw;
+    color: wheat;
+    margin-right: 25%;
+}
+#sliderart2 h3{
+    font-family: 'Caveat', cursive;
+    color:#e0dcdc;
+    font-size:5vw;
+    position:relative;
+    bottom:6%;
+    right:8%;
+}
+#sliderart2 .slidbtn{
+    margin-top:1%;
+    right:12%;
+}
+#sliderart3{
+    width:100%;
+    height:100%;
+    position: absolute;
+    text-align:center;
+    z-index: 5;
+    background: url('../img/bgsect1.png');
+
+}
+
+#sliderart3 h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 8vw;
+    color: wheat;
+}
+#sliderart3 h3{
+    font-family: 'Caveat', cursive;
+    font-size: 4vw;
+    color: #e0dcdc;
+}
+#sliderart3 .slidbtn{
+    margin-top: 6%;
+}
+@keyframes sliderlogo{
+   
+    100%{
+        left:56%;
+bottom:35%;
+
+    }
+}
+
+@media only screen and (max-width:992px){
+    #header1 ul{
+        margin-left: 15%;
+    }
+    #header1 form{
+        margin-left: 35%;
+    }
+    #searchbtn{
+        margin-left: 25%;
+    }
+}
+    /* #########################################################################################"" */
+    /* navigation menu animation */
+@keyframes naviber{
+    0%{
+    transform:rotate(7deg);
+    }
+    50%{
+        transform: scale(1.01,1.01);
+        transform:rotate(11deg);
+    
+    }
+    70%{
+        transform: scale(1.1,1.1);
+        box-shadow: 0 0 10px #636e72,
+        0 0 20px #636e72,
+        0 0 40px #b2bec3,
+        0 0 50px #dfe6e9;
+    }
+    100%{
+    
+        transform:rotate(-7deg);
+    
+    }
+    
+    }
+        /* #########################################################################################"" */
+/* Here we finished Designe code for section 1 and we gonna started the section 2 */
+#sect2{
+    width:100%;
+}
+#sect2 >h1{
+    font-family: 'Permanent Marker', cursive;
+    color: wheat;
+    line-height: 38px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    padding-bottom: 30px;
+    background: url(../img/brboh1.png) 50% bottom no-repeat;
+    font-size: 3.2vw;
+}
+#sect2 >p{
+    font-family: 'Indie Flower', cursive;
+    color:#9ea7a6;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+.row{
+    margin: 0;
+    padding: 0;
+        display: flex;
+    justify-content: center;
+}
+.card{
+    display: inline-block;
+    margin: 5% auto;
+    transform: skew(8deg, 6deg);
+    background: #213046;
+    padding-top: 2%;
+}
+.cardicon{
+    font-size: 3vw;
+    color: #e74c3c;
+    border-bottom: 2px solid #2d3943;
+    padding-bottom: 15px;
+}
+#cards h5{
+    font-family: 'Permanent Marker', cursive;
+color:white;
+width: 80%;
+}
+#cards p{
+    font-family: 'Indie Flower', cursive;
+    color:#9ea7a6;
+
+}
+.btnbtn{
+    font-size: 14px;
+    background: none;
+    border: none;
+    float: right;
+       font-family: 'Bangers', cursive;
+       color:#5c5c5c;
+
+}
+.btnbtn:hover{
+    color:#e74c3c;
+    animation:naviber .3s;
+    background: none;
+}
+
+
+
+
+
+
+
+
+/* Here we finished Designe code for section 2 and we gonna started the section 3 */
+
+#sect3{
+    width: 100%;
+    padding:80px 0px 80px 0px;
+    background-image: url('../img/bgsect3.png');
+}
+#sect3 h1{
+    font-family: 'Permanent Marker', cursive;
+    color: wheat;
+    line-height: 38px;
+    display: flex;
+    justify-content: left;
+    margin-top: 5%;
+    padding-bottom: 30px;
+    background: url(../img/brboh1.png) 20% bottom no-repeat;
+    font-size: 3.2vw;
+    padding-left: 6%;
+    background-size: 20%;}
+.rcpr{
+    margin: auto;
+}
+.pr1{
+    background: url('../img/project4.jpg');
+}
+.pr2{
+    background: url('../img/project2.jpg');
+}
+.pr3{
+    background: url('../img/project9.jpg');
+}
+.sect3card .card{
+    margin: 5% auto!important;
+    padding:0;
+    border-radius: 15px;
+    
+}
+.rcpr .card-title{
+    font-family:'Bangers', cursive; 
+    border-bottom: 2px solid #f7f5f5;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    text-align: center;
+    font-size: 38px;
+    color: #f7f5f5;
+}
+.card-body h6{
+    display: block;
+    padding-top: 10px;
+    color: #cfcccc;
+    opacity: .5;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.rcpr p{
+    margin-top: 16%;
+    text-align: center;
+    color: #cfcccc;
+}
+.rcpr .card-body{
+    background:rgba(231, 76, 60,0.8);
+
+    padding-bottom: 60%;
+    border-radius: 15px;
+}
+.rcpr .card-body:hover{
+    opacity: 0;
+    background: none;
+}
+.hovericon{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity:0;
+
+}
+.hovericon:hover{
+opacity: 1;}
+
+.ic2{
+    margin-left: 45%;}
+.hvicon{
+    font-size: 50px;
+    background: #e74c3c;
+    color: wheat;
+    font-size: 39px;
+    background: #e74c3c;
+    color: wheat;
+    padding: 15px;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+.hvicon:hover{
+    background: wheat;
+    color: #e74c3c;
+    animation: naviber .3s linear;
+}
+
+
+
+
+
+
+/* Here we finished Designe code for section 3 and we gonna started the section 4 */
+#sect4{
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+position: relative;
+}
+#sect4 h1{
+        font-family: 'Permanent Marker', cursive;
+    color: wheat;
+    line-height: 38px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    padding-bottom: 30px;
+    background: url(../img/brboh1.png) 53% bottom no-repeat;
+    font-size: 3.2vw;
+    padding-left: 6%;
+    background-size: 20%;
+}
+
+
+#neptunepng{
+        bottom: 82%;
+    width: 8%;
+    position: absolute;
+    left: 80%;
+
+}
+#planet{
+    position: absolute;
+    width: 100%;
+    
+    top: -5%;
+}
+#neptune{
+border-radius: 50%;
+position: absolute;
+z-index: 1;
+width: 90%;
+border:1px solid rgba(149, 165, 166,0.7);
+display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 50%;
+    top: 8%;
+
+
+}
+#neptune::after{
+content: "";
+padding-bottom: 100%;
+display: block;
+}
+#uranus{
+border-radius: 50%;
+position: absolute;
+z-index: 2;
+width: 80%;
+border:1px solid rgba(149, 165, 166,0.7);
+display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#uranus::after{
+content: "";
+padding-bottom: 100%;
+display: block;
+}
+#uranuspng{
+    position: absolute;
+    bottom: 95%;
+    width: 9%;
+
+}
+#saturn{
+border-radius: 50%;
+position: absolute;
+z-index: 3;
+width: 80%;
+border:1px solid rgba(149, 165, 166,0.7);
+display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#saturn::after{
+content: "";
+padding-bottom: 100%;
+display: block;
+}
+#saturnpng{
+
+width: 14%;
+    position: absolute;
+    bottom: 65%;
+    left: 89%;
+}
+#jupiter{
+border-radius: 50%;
+position: absolute;
+z-index: 4;
+width: 80%;
+border:1px solid rgba(149, 165, 166,0.7);
+display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#jupiter::after{
+content: "";
+padding-bottom: 100%;
+display: block;
+}
+#jupiterpng{
+        width: 14%;
+    position: absolute;
+    left: 66%;
+    bottom: 87%;
+}
+#mars{
+border-radius: 50%;
+position: absolute;
+z-index: 5;
+width: 80%;
+border:1px solid rgba(149, 165, 166,0.7);
+display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#mars::after{
+content: "";
+padding-bottom: 100%;
+display: block;
+}
+#marspng{
+width: 14%;
+    position: absolute;
+    left: 93%;
+}
+#earth{
+border-radius: 50%;
+position: absolute;
+z-index: 6;
+width: 80%;
+border:1px solid rgba(149, 165, 166,0.7);
+display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#earth::after{
+content: "";
+padding-bottom: 100%;
+display: block;
+}
+#earthpng{
+    width: 17%;
+    position: absolute;
+    left: 40%;
+    bottom: 93%;
+}
+#venus{
+border-radius: 50%;
+position: absolute;
+z-index: 7;
+width: 80%;
+border:1px solid rgba(149, 165, 166,0.7);
+display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#venus::after{
+content: "";
+padding-bottom: 100%;
+display: block;
+}
+#venuspng{
+        width: 14%;
+    position: absolute;
+    bottom: 82%;
+    left: 74%;
+}
+#mercury{
+border-radius: 50%;
+position: absolute;
+z-index: 8;
+width: 80%;
+border:1px solid rgba(149, 165, 166,0.7);
+display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#mercury::after{
+content: "";
+padding-bottom: 100%;
+display: block;
+}
+#mercurypng{
+        width: 17%;
+    position: absolute;
+    left: 91%;
+
+}
+#sun{
+border-radius: 50%;
+position: absolute;
+z-index: 9;
+width: 70%;
+border:1px solid rgba(149, 165, 166,0.7);
+display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#sun::after{
+content: "";
+padding-bottom: 100%;
+display: block;
+}
+#sunpng{
+    width: 107%;
+}
+#solarnav{
+    float: right;
+      padding: 15%;
+          padding-top: 10%;
+}
+#solarul{
+    list-style-type: none;
+      
+}
+#solarul li{
+margin-bottom: 22%;
+}
+#solarul button{
+    text-decoration: none;
+    color: rgba(149, 165, 166,1);
+    font-family: 'Bangers', cursive;
+    font-size: 32px;
+    background: none;
+    border:none;
+}
+#solarul button:hover{
+    color: white;
+}
+#solarul button:focus{
+        color: #e74c3c;
+        outline: none;
+
+}
+.toolplanet{
+    visibility: hidden;
+  width: 20%;
+  background-color: #213146;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+padding: 21px;  /*position of tool*/
+  position: absolute;
+  z-index: 30;
+      right: 23%;
+      border-top-right-radius: 0;
+}
+.toolplanet::after{
+    content: "";
+    position: absolute;
+   
+    bottom: 72%;
+    left: 100%;
+    border-left: 16px solid #213146;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+}
+
+
+
+
+/* Here we finished Designe code for section 4 and we gonna started the section 5 */
+
+
+#sect5{
+    width: 100%;
+    padding:80px 0px 80px 0px;
+    background-image: url('../img/bgsect3.png');
+}
+#sect5 h1{
+    font-family: 'Permanent Marker', cursive;
+    color: wheat;
+    line-height: 38px;
+    display: flex;
+    justify-content: left;
+    margin-top: 5%;
+    padding-bottom: 30px;
+    background: url(../img/brboh1.png) 20% bottom no-repeat;
+    font-size: 3.2vw;
+    padding-left: 6%;
+    background-size: 20%;}
+/* Here we finished Designe code for section 5 and we gonna started the section 6 */
+#sect6{
+    width: 100%;
+}
+#sect6 h1{
+    font-family: 'Permanent Marker', cursive;
+    color: wheat;
+    line-height: 38px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    padding-bottom: 30px;
+    background: url(../img/brboh1.png) 50% bottom no-repeat;
+    font-size: 3.2vw;}
+    
+    .one{
+        background: #bc443c;
+        justify-content: flex-end;
+            justify-content: center;
+    position: absolute;
+    z-index: 1;
+    height: 19%;
+    width: 8%;
+    display: flex;
+    right: 98%;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+    }
+    .progicon{
+        font-size: 2.5vw;
+        color: wheat;
+        margin-right: 12%;
+        opacity: 0.7;
+        transform: rotate(90deg);
+        position: relative;
+        right: 33%;
+        }
+    .proginfo{
+        position: relative;
+        font-family: 'Permanent Marker', cursive;
+        color: #bc443c;
+        font-size: 3vw;
+        bottom: 2px;
+    
+           
+    }
+    
+    #sect6row{
+        width: 70%;
+        margin: auto;
+        padding: 10% 0 10% 0;
+    }
+    .progress{
+        background: none;
+    height: 2rem;
+    margin-bottom: 7%;
+    }
+    .progbar{
+    background:white;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    }
+    .prg1{
+        width:10%;
+    }
+    .prg2{
+        width:30%;
+
+    }
+    .prg3{       
+         width:20%;
+    }
+    .prg4{
+        width:50%;
+
+    }
+    .progbar::before
+        {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            right: 7px;
+            height: 1px;
+            background: #f9fcfd;
+            opacity: .1;
+            width: 98%;
+            margin-left: 15px;
+        }
+    
+
+    .progress::after{
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        margin-top: 12px;
+                width: 7px;
+        height: 7px;
+        background: #f9fcfd;
+        border-radius: 50%;
+        opacity: .15;}
+    
+    .oneinfo{
+       font-family:  'Indie Flower', cursive;
+       transform: rotate(90deg);
+       
+    height: 90%;
+    font-size: 3vw;
+    }
+    #sect62row{
+        box-sizing: border-box;
+        padding: 5%;
+    }
+    #sect62row img{
+        width:100%;
+        opacity: 0.3;
+    }
+    #sect62row img:hover{
+       transform: scale(1.1,1.1);
+        opacity: 1;
+        transition: .4s ease-in-out;
+    }
+    #sect63row{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .cardtop{
+        padding: 10%;
+        
+    }
+    
+    .cardtop img{
+        width: 27%;
+        border-radius: 50%;
+        box-shadow: 0 0 30px #556080,
+        0 0 12px white;
+    }
+    .cardtop span{
+    font-family:'Permanent Marker', cursive;
+        font-size: 22px;
+    color: wheat;
+    margin-left: 14%;
+    text-align: center;
+}
+      
+    
+    #sect63row .card{
+        background: none;
+        border-top: 2px solid #213046;
+        border-bottom: 2px solid #213046;
+      
+    
+    }
+    #topinfo{
+        width: 73%;
+        float: right;
+       
+    }
+   
+    #sp2{
+        margin-left: 5%;
+        display: block;
+    padding-top: 10px;
+    color: #cfcccc;
+    opacity: .5;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    }
+    #sect63row .card-body{
+        background: #f5f6fa;
+        padding: 13%;
+       
+    }
+    #sect63row .card-body p{
+    color:#040404;
+    font-family:'Indie Flower', cursive;
+
+}
+
+#sect63row .card-body p::after{
+right: -55px;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    top: -44px;
+    bottom: -42px;
+    border-top: 10px solid #F44336;
+    border-bottom: 10px solid #F44336;
+
+}
+#sect63row .card-body p::before{
+left: -58px;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    top: -44px;
+    bottom: -45px;
+    border-top: 10px solid #F44336;
+    border-bottom: 10px solid #F44336;
+
+}
+
+/* Here we finished Designe code for section 6 and we gonna started the section 7 */
+#sect7{
+    width:100%;
+    height: 55%;
+    background: url('../img/sect7.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 4%;
+    
+}
+#sect7 h1{
+    font-family: 'Bangers', cursive;
+    font-size: 5vw;
+    color: white;
+}
+#sect7 .slidbtn{
+    padding: 4% 11%;
+    top: 60%;
+    right: 237%;
+}
+/* Here we finished Designe code for section 7 and we gonna started the section 8 */
+#sect8{
+    width: 100%;
+    height: 44%;
+    padding: 8% 0 0 2%;
+        border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    border-top: 2px solid white;
+    box-sizing: border-box;
+    background: #364451;
+    box-shadow: 0 0 70px black, 0 0 25px white;
+
+}
+#footer-find{
+    width:30%;
+    float: left;
+    
+}
+#footer-find i{
+color:white;
+font-size: 2.5vw;
+}
+#footer-find p{
+    font-family: 'Indie Flower', cursive;
+    color: #9ea7a6;
+    text-align: center;
+    display: inline-block;
+    font-size: 2.1vw;
+    margin-left: 3%;
+}
+#footer-about{
+    width:30%;
+    float: right;
+    
+    padding-right: 3%;
+ 
+}
+#footer-find h1{
+    font-family: 'Permanent Marker', cursive;
+    color: wheat;
+    line-height: 38px;
+    padding-bottom: 30px;
+    background: url(../img/brboh1.png) 50% bottom no-repeat;
+    font-size: 3.2vw;
+    display: flex;
+    justify-content: center;
+    background-size: 40%;
+}
+#footer-about h1{
+    font-family: 'Permanent Marker', cursive;
+    color: wheat;
+    line-height: 38px;
+    padding-bottom: 30px;
+    background: url(../img/brboh1.png) 51% bottom no-repeat;
+    font-size: 3.2vw;
+    display: flex;
+    justify-content: center;
+    background-size: 40%;
+}
+#footer-about p{
+    font-family: 'Indie Flower', cursive;
+    color: #9ea7a6;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 3%;
+    overflow: scroll;
+    height: 69%;
+}
+#sect8 a {
+	text-decoration: none;
+}
+
+#sect8 ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#sect8 .container1 {
+    height: 18%;
+  
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 34%;
+    margin-top: 4%;
+  
+}
+
+/* ---------- SOCIAL ---------- */
+
+.social {
+	position: relative;
+	height: 3em;
+	width: 13.5em;
+}
+
+.social li {
+	display: block;
+	height: 4em;
+	line-height: 4em;
+	margin: -2.2em;
+	position: absolute;
+	-webkit-transition:  .7s;
+	-moz-transition: .7s;
+	-ms-transition:.7s;
+	-o-transition: .7s;
+	transition:.7s;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	text-align: center;
+    width: 4em;
+    background:#344251;
+    opacity: 0.3;
+}
+
+.social a {
+	color: #fffdf0;
+	display: block;
+	height: 4em;
+	line-height: 4em;
+	text-align: center;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+    width: 4em;	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social a i{
+    font-size: 45px;
+}
+
+.social li:hover {
+  -webkit-transform: scale(1.3,1.3) rotate(45deg);
+	-moz-transform: scale(1.3,1.3) rotate(45deg);
+  -ms-transform: scale(1.3,1.3) rotate(45deg);
+	-o-transform: scale(1.3,1.3) rotate(45deg);
+  transform: scale(1.3,1.3) rotate(45deg);
+}
+
+.facebook {
+	
+	left: 0;
+	top: 0%;
+}
+.facebook:hover{
+    background:#40739e ;
+    opacity: 1;
+}
+
+.twitter {
+	bottom: 0;
+	left: 25%;
+}
+.twitter:hover{
+    background:#0097e6;
+    opacity: 1;
+}
+
+.dribbble {
+	left: 50%;
+	top: 0%;
+}
+.dribbble:hover{
+    background:#e84393;
+    opacity: 1;
+}
+
+.behance {
+	bottom: 0;
+	left: 75%;
+}
+.behance:hover{
+    background: #fbc531;
+    opacity: 1;
+}
+
+.linked-in {
+	left: 100%;
+	top: 0%;
+}
+.linked-in:hover{
+    background:#40739e;
+    opacity: 1;
+}
+
+/* Here we finished Designe code for section 8 and we gonna started the section 9 */
+
+#sect9{
+    width: 100%;
+        border-top: 25px solid #364451;
+    background: #364451;
+}
+footer{
+    width: 100%;
+
+}
+footer span{
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+        margin-left: 60px;
+}
+footer a{
+    float: none!important;
+}
+footer img{
+    float:right;
+    width: 17%;
+    
+}
+/* Here we finished Designe code for section 9 and we finish the website*/
+
+::-webkit-scrollbar{
+    width: 0.3%;
+    
+  
+}
+::-webkit-scrollbar:hover{
+    width: 0.8%;
+    transition: .2s;
+  
+}
+
+::-webkit-scrollbar-thumb{
+    background:rgb(243, 240, 240);
+}
+
+#progress{
+
+    width: 100%;
+    height: 10px;
+    background-color: red;
+    position: fixed;
+    margin-top: 100px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+
+}
+/*################## planet animation ###################################"*/
+@keyframes planetloop{
+from{
+transform: rotate(0deg);
+}
+to{
+transform: rotate(360deg);
+
+}
+
+}
+@keyframes sunanimation{
+    from{
+    box-shadow: 0 0 50px orange;
+    }
+    to{
+    box-shadow: 0 0 130px orange;
+
+    }
+}
+/*########################################################################*/

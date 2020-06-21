@@ -1,0 +1,110 @@
+
+.contact-form{
+   width: 100%;
+   box-sizing: border-box;
+   padding-top: 10%;
+   background: url('../img/contactmap.png');
+   background-attachment: fixed;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    width: 100%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+    display: flex;
+    justify-content: center;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.contact-image img{
+    width: 11%;
+}
+.contact-form form{
+    padding: 5% 6% 20% 6%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    font-family: 'Permanent Marker', cursive;
+    color: wheat;
+    line-height: 38px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    background: url(../img/brboh1.png) 50% bottom no-repeat;
+    font-size: 3.2vw;
+    margin-bottom: 4%;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 4.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    font-family: 'Permanent Marker', cursive;
+    
+
+}
+.contact-form .btnContact:hover{
+    animation: naviber .3s;
+    background: white!important;
+    transition:1s;
+    color:#7f8c8d;
+}
+.contact-form .btnContact:focus{
+    outline: none;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+.form-group{
+    display: flex;
+    justify-content: center;
+}
+@keyframes naviber{
+    0%{
+    transform:rotate(7deg);
+    }
+    50%{
+        transform: scale(1.01,1.01);
+        transform:rotate(11deg);
+    
+    }
+    70%{
+        transform: scale(1.1,1.1);
+        box-shadow: 0 0 10px #636e72,
+        0 0 20px #636e72,
+        0 0 40px #b2bec3,
+        0 0 50px #dfe6e9;
+    }
+    100%{
+    
+        transform:rotate(-7deg);
+    
+    }
+    
+    }
+    .form-control:focus{
+        box-shadow: 0 0 30px black;
+    }

@@ -1,0 +1,246 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+background-color: #16263d;
+    background-repeat: repeat;
+    background-size: inherit;
+    background-attachment: scroll;
+    background-position: center top;
+    background-image: url(http://tjoywp.dan-fisher.com/wp-content/themes/tjoy/images/pattern.gif);
+}
+main{
+	width: 100%;
+
+}
+#sect1{
+	background: url('../img/bgsect1.png');
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+}
+header{
+	width: 100%;
+	height: 100px;
+	background: rgba(99, 110, 114,0.4);
+	border-bottom-left-radius: 40%;
+		border-bottom-right-radius: 40%;
+		position:fixed;
+		box-sizing: border-box;
+		padding: 20px;
+	
+
+}
+header img{
+	width: 18%;
+	float: left;
+}
+header nav{
+	width: 80%;
+	float: right;
+	
+}
+header nav ul{
+	width: 72%;
+	list-style-type: none;
+float: left;
+}
+header nav li{
+	display: inline-block;
+    margin-left: 8px;
+    width: 17%;
+text-align: center;
+}
+header nav a{
+	color: white;
+	text-decoration:none; 
+	font-family: 'Indie Flower', cursive;
+	display: block;
+	padding: 14px;
+    font-size: 113%;
+
+}
+header nav form{
+	float: right;
+	width: 26%;
+    margin-top: 12px;
+}
+#searchbox{
+	width: 52%;	
+	height: 25px;
+	border-radius: 15px;
+	border:none;
+	background-color: white;
+	background-image: url('../img/searchicon.png');
+	background-position: 5px 5px;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	background-size: 19px;
+}
+#searchbox:focus{
+	outline: none;
+	width: 60%;
+	float: left;
+}
+#searchbox::placeholder{
+text-align: center;
+font-size: 15px;
+
+
+}
+#btmsr{
+	background: none;
+	border: none;
+	width: 34px;
+    margin-left: 28px;
+	height: 27px;
+	cursor: pointer;
+	
+}
+#btmsr:hover{
+	background:whitesmoke;
+	transition: 1s;
+}
+#btmicon:hover{
+	color: #16263d;
+}
+#btmicon{
+	color: wheat;
+    font-size: 16px;
+}
+
+header nav li:first-child{
+	background: whitesmoke;
+	border-radius: 15px;
+
+}
+header nav li:first-child  a{
+color:#7f8c8d;
+}
+header nav li:first-child:hover{
+	background: #16263d;
+
+}
+header nav li:first-child a:hover{
+color:whitesmoke;
+}
+header nav li:hover{
+	background: whitesmoke;
+	transition: 1s;
+	border-radius: 15px;
+	animation: naviber .3s;
+}
+header nav  a:hover{
+	color:#7f8c8d ;
+}
+/* slider1 is gonna started */
+.sliders{
+	width: 100%;
+
+}
+
+/* navigation menu animation */
+@keyframes naviber{
+0%{
+transform:rotate(7deg);
+}
+50%{
+	transform: scale(1.01,1.01);
+	transform:rotate(11deg);
+
+}
+70%{
+	transform: scale(1.1,1.1);
+	box-shadow: 0 0 10px #636e72,
+	0 0 20px #636e72,
+	0 0 40px #b2bec3,
+	0 0 50px #dfe6e9;
+}
+100%{
+
+	transform:rotate(-7deg);
+
+}
+
+}
+#slider{
+	
+position: absolute;
+z-index: -1;
+	overflow: hidden;
+	box-sizing: border-box;
+	max-height:100% ;
+}
+#slider figure{
+	width: 400%;
+	position: relative;
+	margin: 0;
+	left: 0;
+	animation: slider1 40s infinite  ;
+
+}
+.sliders{
+	max-width: 25%;
+	float: left;
+}
+video{
+	max-width: 100%;
+	max-height: 100%;
+	background: url('../img/bgsect1.png');
+
+}
+@keyframes slider1{
+	0%{
+left:0%;
+	}
+	15%{
+left:0%;
+	}
+	20%{
+left: -100%;
+	}
+	35%{
+		left: -100%;
+
+	}
+	40%{
+		left: -200%;
+
+	}
+	55%{
+		left: -200%;
+
+	}
+	70%{
+		left: -300%;
+
+	}
+	75%{
+		left: -300%;
+
+	}
+	90%{
+		left: -400%;
+
+	}
+	100%{
+		left: -400%;
+
+	}
+}
+::-webkit-scrollbar{
+
+	width: .5%;
+}
+::-webkit-scrollbar-track{
+	border: 2px solid #212121;
+	background: aliceblue;
+}
+::-webkit-scrollbar-thumb{
+background-color: #2d3436;
+border-radius: 15px;
+}
+/*############## planet animation #########*/

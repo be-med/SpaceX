@@ -1,0 +1,120 @@
+#header1{
+    position: static;
+}
+#prjfog{
+    width: 100%;
+    background: url('../img/prjfog.jpg');
+    padding: 2% 12%;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+#prjfog h1{
+    color: white;
+    font-family:'Permanent Marker', cursive;
+        font-size: 2.2vw;
+
+}
+#prjnav{
+    width: 100%;
+    padding: 2% 12%;
+}
+#prjnav ul{
+    list-style-type: none;
+    background: #213046;
+    border-radius: 15px;
+}
+#prjnav li{
+    display: inline-block;
+    margin-right: 2%;
+    text-align: center;
+}
+#prjnav a{
+    color: white;
+    text-decoration:none; 
+    font-family: 'Indie Flower', cursive;
+    display: block;
+    padding: 14px;
+    font-size: 113%;
+}
+
+#prjnav li:first-child{
+    background: whitesmoke;
+    border-radius: 15px;
+
+}
+#prjnav li:first-child  a{
+color:#7f8c8d;
+}
+#prjnav li:first-child:hover{
+    background: #16263d;
+
+}
+#prjnav li:first-child a:hover{
+color:whitesmoke;
+}
+ #prjnav li:hover{
+    background: whitesmoke;
+    transition: 1s;
+    border-radius: 15px;
+    animation: naviber .3s;
+}
+#prjnav  a:hover{
+    color:#7f8c8d ;
+}
+.sect3card .card{
+    margin-right: 5%!important;
+    margin-bottom: -2%!important;
+    margin-top: 7%!important;
+    transform: skew(0, 0);
+}
+.row{
+    padding: 0 4% 0 4%;
+}
+#tnpj{
+    width: 100%;
+    padding: 2% 12%;
+}
+#tnpj ul{
+    list-style-type: none;
+    background: #213046;
+    border-radius: 15px;
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+}
+#tnpj li{
+    display: inline-block;
+    margin-right: 2%;
+    text-align: center;
+}
+#tnpj a{
+    color: white;
+    text-decoration:none; 
+    font-family: 'Indie Flower', cursive;
+    display: block;
+    padding: 14px;
+    font-size: 113%;
+}
+#tnpj li:first-child{
+    background: whitesmoke;
+
+}
+#tnpj li:first-child  a{
+color:#7f8c8d;
+}
+#tnpj li:first-child:hover{
+    background: #16263d;
+
+}
+#tnpj li:first-child a:hover{
+color:whitesmoke;
+}
+ #tnpj li:hover{
+    background: whitesmoke;
+    transition: 1s;
+    animation: naviber .3s;
+}
+#tnpj  a:hover{
+    color:#7f8c8d ;
+}
