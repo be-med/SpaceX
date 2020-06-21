@@ -1,0 +1,234 @@
+<html>
+<head>
+    <title>404</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bangers|Fredoka+One|Righteous&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        
+        }
+     #container{
+
+height: 100%;
+overflow: hidden;
+width: 100%;
+  }
+     #slider{
+         width: 100%;
+         height: 100%;
+         background: url('img/slidmv.jpg') no-repeat;
+background-attachment: fixed;
+animation: spacemove 30s infinite alternate linear;
+     }
+     .bg{
+display: block;
+width: 100%;
+     }
+   
+     @keyframes spacemove{
+        0%{
+            background-position:0% ;
+        } 
+        100%{
+            background-position: 100%;
+
+         }
+     }
+     @keyframes radmv{
+0%{
+    left: 0;
+    top:0;
+}
+100%{
+    left: 40%;
+    top:10%;
+}
+     }
+ 
+     #rad404{
+        position: absolute;
+      
+    bottom: 9%;
+    width: 51%;
+    height:85% ;
+    background:url('img/404rad.png') no-repeat;
+    background-size: 100%;
+   animation: radmv 20s infinite alternate linear;
+}
+
+#rad404 > h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 6vw;
+    position: relative;
+    left: 12%;
+    color: #2e2f2f;
+}
+#rad404 h2{
+    width: 25%;
+    font-size:2.08vw;
+    position: relative;
+    left: 3%;
+    font-family: 'Righteous', cursive;
+    color: #3a3b3c;
+    display: inline-block;
+}
+
+.w{
+    float: right;
+    font-family: 'Bangers', cursive;
+    font-size: 2.8vw;
+    color: #2d2a2a;
+    position:relative;
+    }
+    nav{
+        float: right;
+        position: relative;
+        left:49%;
+    }
+    nav h1{
+        bottom: 20px;
+    position: relative;
+    font-family: 'Righteous', cursive;
+    font-size: 1.5vw;
+    color: #474552;
+    }
+    nav ul{
+list-style-type: none;
+text-align: right;
+position: relative;
+    bottom: 20px;
+    }
+    nav li{
+display:inline-block;
+margin-left: 2%;
+    }
+    nav a{
+text-decoration: none;
+    color: #989696;
+    font-size:1.1vw;
+
+    }
+    form{
+        left: 16%;
+    position: relative;
+        bottom: 13px;
+        width: 100%;
+    }
+    #spans{
+      float: right;
+    position: relative;
+    width: 50%;
+    right: 13%;
+    bottom: 31px;
+}
+    
+    #searchbox{
+        width: 73%;
+    height: 4%;
+    border-radius: 15px;
+    border: .5px solid #c7c2c2;
+    box-shadow: -10px -10px 95px black;
+    }
+    #searchbox::placeholder{
+        font-family: 'Bangers', cursive;
+        font-size: 20px;
+        text-align: center;
+    }
+        @media only screen and (max-width: 600px){
+        #rad404{
+           
+           width: 100%;
+           background-size:95%;
+           animation: none;
+overflow: hidden;
+
+        }
+        #rad404 >h1{
+            font-size: 60px;
+                left: 53px;
+            
+        }
+       #rad404 h2 {
+    width: 24%;
+    font-size: 4.08vw;
+    position: relative;
+    left: 3%;
+    font-family: 'Righteous', cursive;
+    color: #3a3b3c;
+    display: inline-block;
+  
+}
+#spans {
+    float: right;
+    position: relative;
+    width: 38%;
+    right: 18%;
+    bottom: 25px;
+}
+.w{
+    font-size: 4.8vw;
+}
+nav{
+    left: 0;
+}
+nav h1{
+        bottom: 30px;
+        right: 13%;
+        font-size: 2.8vw;
+}
+nav a{
+   font-size: 2.3vw;
+}
+nav ul{
+        bottom: 31px;
+    right: 16%;
+}
+     form{
+    left: 3%;
+    bottom: 28px;
+    width: 100%;
+     }
+     }
+   
+
+    </style>
+    </head>
+<body>
+    <div id="container">
+    <div id="slider">
+        <div id='rad404'>
+
+<h1>ERROR 404!!</h1>
+<h2>Med,We Have A Problem!!</h2>
+<div id="spans">
+<span id='w1' class='w'>The universe</span> <span id='w2' class='w'>you are looking for</span><span id='w3' class='w'> doesn't exist</span></div>
+<nav>
+    <h1>Try to visit one of these universes</h1>
+    <ul>
+<li><a href="index1.html">Home</a></li>
+<li><a href="project.html">Project</a></li>
+<li><a href="decov.html">Discoveries</a></li>
+<li><a href="#sect9">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+
+    </ul>
+    <form>
+        <input type="text" name="search" id="searchbox" placeholder="Or Search Here" >
+       <a href="#"> <i class="fas fa-search" id="searchicon"></i></a>
+    </form>
+</nav>
+        </div>
+    
+</div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/04a397b70a.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/404.js"></script>
+    </body>
+
+</html>
